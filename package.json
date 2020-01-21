@@ -1,0 +1,31 @@
+{
+  "name": "dxc-audio",
+  "version": "1.0.1",
+  "description": "音频",
+  "config": {
+    "port": 7201
+  },
+  "main": "./lib",
+  "scripts": {
+    "build": "rc-tools run build",
+    "start": "rc-tools run server --babel-runtime",
+    "css": "rc-tools run css",
+    "pub": "rc-tools run publish",
+    "dist": "rc-tools run compile && rc-tools run dist"
+  },
+  "devDependencies": {
+    "rc-tools": "8.x",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "files": [
+    "assets",
+    "examples",
+    "lib",
+    "src"
+  ],
+  "dependencies": {
+    "dxc-flex": "^1.0.3",
+    "fs-addcomponent": "^0.0.1"
+  }
+}
